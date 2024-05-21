@@ -14,6 +14,8 @@ class ProveedorSerializer(serializers.ModelSerializer):
 
 
 class ProductoSerializer(serializers.ModelSerializer):
+    categoria = CategoriaSerializer()
+    proveedor = ProveedorSerializer()
     class Meta:
         model = Producto
         fields='__all__'
