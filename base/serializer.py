@@ -18,4 +18,4 @@ class ProductoSerializer(serializers.ModelSerializer):
     proveedor = ProveedorSerializer()
     class Meta:
         model = Producto
-        fields='__all__'
+        fields=['id', 'nombre','categoria','proveedor','codigo_interno']
