@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     "coreapi",
     "rest_framework",
     "rest_framework.authtoken",
+    "login",
     "base",
-    "login"
+    "scrapPlasti"
 ]
 
 MIDDLEWARE = [
